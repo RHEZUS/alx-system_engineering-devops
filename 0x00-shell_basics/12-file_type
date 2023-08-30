@@ -1,2 +1,2 @@
 #!/bin/bash 
-echo "$(type /tmp/iamafile)"
+echo "$(file /tmp/iamafile)"
