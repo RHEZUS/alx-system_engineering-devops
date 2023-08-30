@@ -1,2 +1,2 @@
 #!/bin/bash 
-echo "$(ln /bin/ls ./__ln__)"
+ln /bin/ls ./__ln__
