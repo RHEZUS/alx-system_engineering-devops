@@ -38,6 +38,6 @@ Each of the following line is a shell script file except school.mgc.
 - Only digits and letters are used to sort; Digits should come first
 - You can assume that all the files we will test with will have at least one letter or one digit
 - The listing should end with a new line |
-| [`school.mgc`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc) |school.mgc is a magic file that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0. |
+| [`school.mgc`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc) | school.mgc is a magic file that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0. |
 
 
