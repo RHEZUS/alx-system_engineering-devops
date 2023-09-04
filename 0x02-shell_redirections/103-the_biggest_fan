@@ -1,2 +1,2 @@
 #!/bin/bash
-
+cut -d" " -f1 | sort | uniq -c | sort -n | awk '{print $2}'
