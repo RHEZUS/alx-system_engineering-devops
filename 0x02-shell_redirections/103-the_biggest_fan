@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d" " -f1 | sort | uniq -c | sort -n | awk '{print $2}'
+tail -n +2 | cut -d" " -f1 | sort -k 1 | uniq | sort -rnk 1 | head -n 11
