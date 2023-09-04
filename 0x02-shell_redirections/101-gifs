@@ -1,2 +1,2 @@
 #!/bin/bash
-find  find ./  -name '*.gif' -type f -print "%f\n"
+ls ./*md
