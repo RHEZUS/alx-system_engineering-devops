@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lht --file-type  ./* | head -n 10
+ls -lt ./ | head -n 10
