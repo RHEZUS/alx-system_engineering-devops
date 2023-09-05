@@ -1,2 +1,2 @@
 #!/bin/bash
-echo PATH=$PATH:"$OLDPWD"
+echo PATH="$PATH:/action"
