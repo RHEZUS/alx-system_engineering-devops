@@ -1,2 +1,2 @@
 #!/bin/bash
-PATH=$PATH:$OLDPWD
+PATH=$PATH:"$OLDPWD"
