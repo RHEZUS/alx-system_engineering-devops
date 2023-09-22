@@ -12,8 +12,8 @@ These files represent the different script files of the project and the descript
 
 | FILES | DESCRIPTION |
 | ----------- | ----------- |
-|[`0-hello_world`](0x02-shell_redirections/0-hello_world) | Print “Hello, World”, followed by a new line to the standard output. |
-|[`1-confused_smiley`](0x02-shell_redirections/1-confused_smiley) | Display a confused smiley "(Ôo)'. |
+|[`0-hello_world`](0-hello_world) | Print “Hello, World”, followed by a new line to the standard output. |
+|[`1-confused_smiley`](1-confused_smiley) | Display a confused smiley "(Ôo)'. |
 |[`2-hellofile`](0x02-shell_redirections/2-hellofile) | Display the content of the */etc/passwd* file. |
 |[`3-twofiles`](0x02-shell_redirections/3-twofiles) | Display the content of /etc/passwd and */etc/hosts* |
 |[`4-lastlines`](0x02-shell_redirections/4-lastlines) | Display the last 10 lines of */etc/passwd* |
