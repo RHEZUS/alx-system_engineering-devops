@@ -1,0 +1,7 @@
+#!/bin/bash
+
+i=0
+until [ $i -ge 10 ]; do
+	echo "Best School"
+	i=$[$i+1]
+done

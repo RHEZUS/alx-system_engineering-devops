@@ -1,0 +1,13 @@
+#!/bin/bash
+
+i=0
+while [ $i -ne 10 ]
+do
+	if [ $i -eq 8 ]
+	then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	i=$[$i+1]
+done

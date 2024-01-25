@@ -1,0 +1,10 @@
+#!/bin/bash
+filename="/etc/passwd"
+el="\'"
+if [ -e "$filename" ]; then
+	while IFS= read -r line; do
+		result=$(echo "$line" | awk -F: '{print "The user " $1 " is part of the "  $4 " gang, lives in " $6 " and rides " $NF ". " $3  "\'s place is protected by the passcode " $2 ", more info about the user here: " $5}')
+
+		echo $result
+	done < "$filename"
+fi
