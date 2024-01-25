@@ -1,9 +1,6 @@
 #!/bin/bash
-filename="/etc/passwd"
+file="/etc/passwd"
 
-if [ -e "$filename" ]; then
-	while IFS= read -r line; do
-		result=$(echo "$line" | awk -F: '{print $1 ":" $3 ":" $6}')
-		echo $result
-	done < "$filename"
-fi
+while IFS= read -r line; do
+  echo "$line" | cut -d ':' -f1,3,6
+done < "$file"
