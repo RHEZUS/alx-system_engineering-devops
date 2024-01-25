@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# If 9, say Hi!
 
 i=0
 while [ $i -ne 10 ]

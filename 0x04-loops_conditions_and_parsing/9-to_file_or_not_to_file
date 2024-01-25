@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# To file, or not to file
 
 file=school
 if [ -e $file ]

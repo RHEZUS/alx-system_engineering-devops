@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# 4 bad luck, 8 is your chance
 
 i=0
 while [ $i -ne 10 ]
