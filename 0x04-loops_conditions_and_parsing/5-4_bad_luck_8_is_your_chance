@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 i=0
 while [ $i -ne 10 ]
@@ -12,5 +12,5 @@ do
 	else
 		echo "Best School"
 	fi
-	i=$[$i+1]
+	((i++))
 done

@@ -1,7 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Prints Best School 10 times with while
+
 i="0"
 while [ $i -lt 10 ]
 do
 	echo "Best School"
-	i=$[$i+1]
+	((i++))
 done

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 i=0
 while [ $i -ne 13 ]
@@ -8,7 +8,7 @@ do
 	while [ $j -ne 60 ]
 	do
 		echo "$j"
-		j=$[$j+1]
+		((j++))
 	done
-	i=$[$i+1]
+	((i++))
 done
