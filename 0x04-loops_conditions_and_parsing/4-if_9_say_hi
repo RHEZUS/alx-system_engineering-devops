@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 # If 9, say Hi!
 
-i=0
-while [ $i -ne 10 ]
+i=1
+while [ $i -lt 11 ]
 do
-	if [ $i -eq 8 ]
+	echo "Best School"
+	if [ $i -eq 9 ]
 	then
 		echo "Hi"
-	else
-		echo "Best School"
 	fi
 	((i++))
 done
