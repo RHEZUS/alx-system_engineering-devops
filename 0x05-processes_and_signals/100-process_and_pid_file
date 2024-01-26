@@ -1,0 +1,21 @@
+#!/usr/bin/env bash 
+# Process and PID file
+
+echo "$$" > /var/run/myscript.pid
+
+handle_sigterm(){
+	echo "I hate the kill command"
+	exit
+}
+
+handle_sigint(){
+	echo "Y U no love me?!"
+}
+
+trap handle_sigterm SIGTERM SIGQUIT
+trap handle_sigint SIGINT
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done

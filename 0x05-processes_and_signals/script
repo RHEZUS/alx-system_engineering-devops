@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in *; do
+	chmod +x $file
+	echo -e "#!/usr/bin/env bash \n #" >> $file;
+done

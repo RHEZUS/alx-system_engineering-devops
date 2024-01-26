@@ -1,0 +1,13 @@
+#!/usr/bin/env bash 
+# Highlander
+
+high_lander() {
+    echo "I am invincible!!!"
+}
+
+trap high_lander SIGTERM
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
