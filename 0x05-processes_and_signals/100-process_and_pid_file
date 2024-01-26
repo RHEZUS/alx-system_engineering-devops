@@ -5,6 +5,7 @@ echo "$$" > /var/run/myscript.pid
 
 handle_sigterm(){
 	echo "I hate the kill command"
+	rm /var/run/myscript.pid
 	exit
 }
 
