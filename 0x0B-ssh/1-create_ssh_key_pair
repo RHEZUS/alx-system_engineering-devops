@@ -1,0 +1,12 @@
+#!/bin/bash
+# Define variables
+KEY_NAME="school"
+BITS=4096
+PASSPHRASE="betty"
+
+if [ -f "$KEY_NAME" ]; then
+    echo "Key file '$KEY_NAME' already exists."
+    exit 1
+fi
+
+ssh-keygen -t rsa -b $BITS -N "$PASSPHRASE" -f "$KEY_NAME"
