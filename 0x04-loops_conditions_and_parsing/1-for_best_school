@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# prints Best School 10 times
+# For Best School loop
 
 for _ in {0..9}; do
 	echo "Best School"
