@@ -23,7 +23,7 @@ install haproxy #install haproxy
 echo -e "\nSetting up some minor stuff.\n"
 
 # backup default server config file
-sudo cp /etc/haproxy/haproxy.cfg haproxy_default.backup
+#sudo cp /etc/haproxy/haproxy.cfg haproxy_default.backup
 
 server_config=\
 "
@@ -43,10 +43,12 @@ backend clickviral-tech-backend
 "
 
 # shellcheck disable=SC2154
-echo "$server_config" | sudo dd status=none of=/etc/haproxy/haproxy.cfg
+#echo "$server_config" | sudo dd status=none of=/etc/haproxy/haproxy.cfg
+echo "$server_config" | sudo tee /etc/haproxy/haproxy.cfg > /dev/null
 
 # enable haproxy to be started by init script
-echo "ENABLED=1" | sudo dd status=none of=/etc/default/haproxy
+#echo "ENABLED=1" | sudo dd status=none of=/etc/default/haproxy
+echo "ENABLED=1" | sudo tee /etc/default/haproxy > /dev/null
 
 if [ "$(pgrep -c haproxy)" -le 0 ]; then
 	sudo service haproxy start
