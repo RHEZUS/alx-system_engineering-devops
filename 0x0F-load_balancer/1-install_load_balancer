@@ -18,7 +18,7 @@ function install() {
 	fi
 }
 
-install haproxy #install haproxy
+sudo apt install haproxy
 
 echo -e "\nSetting up some minor stuff.\n"
 
