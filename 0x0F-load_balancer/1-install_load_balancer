@@ -1,15 +1,27 @@
 #!/usr/bin/env bash
-#Installs and configures HAproxy in a load balancer server
+# Installs and configures HAproxy in a load balancer server
 
-apt-get install -y software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-1.8
+# Install required packages
 apt-get update
-apt-get install -y haproxy=1.8.\*
+apt-get install -y software-properties-common
 
+# Add the PPA repository for HAProxy 2.0
+add-apt-repository -y ppa:vbernat/haproxy-2.0
+apt-get update
+
+# Install HAProxy version 2.0.33-0ubuntu0.1
+apt-get install -y haproxy=2.0.\*
+
+# Enable HAProxy service
 echo "ENABLED=1" >> /etc/default/haproxy
+
+# Backup the original HAProxy configuration file
 mv /etc/haproxy/haproxy.cfg{,.original}
+
+# Create a new HAProxy configuration file
 touch /etc/haproxy/haproxy.cfg
 
+# Populate HAProxy configuration file with your settings
 printf %s "global
     log 127.0.0.1 local0 notice
     maxconn 2000
@@ -37,4 +49,7 @@ listen hbnb
     server 59637-web-02 35.175.132.106:80 check
 " >> /etc/haproxy/haproxy.cfg
 
+# Start HAProxy service
 service haproxy start
+
+echo "HAProxy installation and configuration completed successfully!"
