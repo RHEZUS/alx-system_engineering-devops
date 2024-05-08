@@ -18,5 +18,4 @@ def number_of_subscribers(subreddit):
         else:
             return 0
     except Exception as e:
-        print("An error occurred:", e)
         return 0
