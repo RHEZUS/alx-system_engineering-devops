@@ -5,7 +5,7 @@ After=network.target
 
 [Service]
 # set the Service under the user ubuntu
-User:ubuntu
+User=ubuntu
 # set the working directory
 WorkingDirectory=/home/ubuntu/AirBnB_clone_v4
 # start the gunicorn with 3 workers 
